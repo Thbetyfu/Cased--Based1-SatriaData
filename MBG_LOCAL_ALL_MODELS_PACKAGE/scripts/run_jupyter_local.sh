@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -e
+export MBG_DATA_DIR="${MBG_DATA_DIR:-data}"
+export MBG_LOCAL_PROFILE="${MBG_LOCAL_PROFILE:-AUTO}"
+export MBG_LOCAL_ALL_MODELS="${MBG_LOCAL_ALL_MODELS:-1}"
+echo "MBG_LOCAL_PROFILE=$MBG_LOCAL_PROFILE"
+echo "MBG_LOCAL_ALL_MODELS=$MBG_LOCAL_ALL_MODELS"
+jupyter lab notebooks/MBG_LOCAL_ALL_MODELS_V4.ipynb
